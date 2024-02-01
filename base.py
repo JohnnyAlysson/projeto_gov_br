@@ -1,0 +1,1 @@
+dado= {"nome":"Johnny","Idade": "28"}
