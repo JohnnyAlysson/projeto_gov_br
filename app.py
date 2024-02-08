@@ -1,26 +1,16 @@
-from flask import Flask , render_template
-import base
-app=Flask(__name__)
+from flask import Flask, render_template
+app = Flask(__name__)
 @app.route("/")
-def hello_world():
-    return "<h1>Minha primeira página</h1>"
+def home():
+    return render_template('home.html')
 
-@app.route("/segunda_pagina")
-def segunda_pagina():
-    return render_template("index.html")
+@app.route("/contatos")
+def contatos():
+    return render_template('contatos.html')
 
-@app.route("/terceira_pagina")
-def terceira_pagina():
-    return base.dado
-
-@app.route('/v1/users/idade/<nome>')
-def retorna_idade(nome: str):
-    if nome == 'johnny':
-        return { 'idade':28 }
-    else:
-    	return { 'idade':' ' }
+@app.route("/sobre")
+def sobre():
+    return render_template('sobre.html')
 
 
-
-if __name__ == "__main__":
-    app.run()
+app.run()
