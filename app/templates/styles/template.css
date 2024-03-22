@@ -17,39 +17,7 @@ body{
     background-color: azure;
     filter: drop-shadow(5px 5px 8px #000000);
 }
-
-.main_img{
-    align-self: flex-start;
-    margin: 0;
-    width: 100%;
-    height: auto;
-}
-
-.main_frame h1{
-    color: #2864AE;
-    font-family: "Kanit";
-    font-size: 100px;
-    font-weight: 700;
-    margin-top: -0.7em;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    
-}
-.main_frame img{
-    width: 100%;
-    height: auto;
-
-}
-.logo{
-    margin: -15px 8px;
-}
-
-
-
-
-
-
-
+/* ########   Responsividade      ######## */
 @media (max-width: 800px) {
 body{
     justify-content: flex-start;
